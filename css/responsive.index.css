@@ -1,0 +1,346 @@
+/*350*/
+@media (max-width: 1300px) {
+  header nav {
+    padding: 10px 25px;
+    position: relative;
+  }
+  header nav .logo h1 {
+    font-size: 25px;
+  }
+  header nav .links .burger {
+    display: block; /*ع يحسب المارجن لبلوك الجواه صح ويقبل البوردر*/
+    border: 1px solid #fff;
+    border-radius: 5px;
+  }
+  header nav .links .burger span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    margin: 8px 12px;
+  }
+  header nav .links ul {
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    background-color: #000;
+    transform: translate(-50%, 100%);
+    flex-direction: column;
+    border-radius: 10px;
+    align-items: center;
+    row-gap: 20px;
+    padding-block: 0px;
+    transition-duration: 0.5s;
+    width: 85%; /*هنا مش في ال checked */
+  }
+  header nav .links input:checked ~ ul {
+    height: 349px;
+    padding-block: 20px;
+  }
+  header .container {
+    width: 90%;
+  }
+  header .container h2 {
+    font-size: 30px;
+  }
+  header .container h4 {
+    font-size: 22px;
+  }
+  header .container button {
+    padding: 10px 10px;
+  }
+
+  .container {
+    width: 90%;
+  }
+  #About .container > * {
+    width: 100%;
+  }
+  #About .container .content h2 {
+    font-size: 30px;
+  }
+
+  .title h2 {
+    font-size: 28px;
+  }
+  #Services .container .row {
+    width: 280px;
+    margin-inline: auto;
+  }
+  #Services .container .row .info {
+    order: 2;
+    width: 100%;
+  }
+  #Services .container .row .info h3 {
+    font-size: 24px;
+  }
+  #Services .container .row .icon {
+    width: 100%;
+    order: 1;
+    margin-bottom: 28px;
+  }
+
+  #Clients .container .content {
+    row-gap: 28px;
+  }
+  #Clients .container .content .box {
+    width: 280px;
+    margin-inline: auto;
+  }
+  #Clients .container .content .box .item p {
+    width: 100%;
+  }
+
+  #Trainers .container .cards {
+    row-gap: 35px;
+  }
+  #Trainers .container .cards .card {
+    width: 280px;
+    margin-inline: auto;
+  }
+
+  #Gallery .container .images {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(7, 300px);
+    width: 250px;
+    margin-inline: auto;
+  }
+  #Gallery .container .images .image:nth-of-type(1) {
+    grid-row: auto;
+  }
+  #Gallery .container .images .image:nth-of-type(4) {
+    grid-row: auto;
+  }
+
+  #Contact .container .row {
+    row-gap: 20px;
+  }
+  #Contact .container .row .info {
+    width: 280px;
+    margin-inline: auto;
+  }
+  #Contact .container form {
+    row-gap: 20px;
+  }
+  #Contact .container form .input {
+    width: 280px;
+    margin-inline: auto;
+  }
+  #Contact .container form .input .item input::placeholder,
+  #Contact .container form .input .item textarea::placeholder {
+    font-size: initial;
+  }
+
+  footer .container {
+    row-gap: 15px;
+  }
+  footer .container .Nav-links,
+  footer .container .posts,
+  footer .container .Times {
+    width: 280px;
+    margin-inline: auto;
+  }
+  footer .container .posts .item .images {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+  }
+  footer .footer-bottom .item p {
+    font-size: 16px;
+    width: 80%;
+    margin-inline: auto;
+  }
+}
+  /*450*/
+  @media (min-width: 371px) and (max-width: 1300px) {
+    header nav .logo h1 {
+      font-size: 30px;
+    }
+    header .container h2 {
+      font-size: 40px;
+    }
+    header .container h4 {
+      font-size: 26px;
+    }
+
+    #Clients .container .content .box {
+      width: 100%;
+    }
+    #Clients .container .content .box .item p {
+      width: 90%;
+    }
+
+    #Contact .container .row .info {
+      width: 100%;
+    }
+    #Contact .container form .input {
+      width: 100%;
+    }
+
+    footer .container .Nav-links,
+    footer .container .posts,
+    footer .container .Times {
+      width: 100%;
+      margin-inline: initial;
+    }
+    footer .footer-bottom .item p {
+    font-size: 18px;
+    width: initial;
+    margin-inline: initial;
+    }
+  
+}
+/*650*/
+@media (min-width: 577px) and (max-width: 1300px) {
+  header nav .logo h1 {
+    font-size: 38px;
+  }
+  header .container {
+    width: 85%;
+  }
+  header .container h2 {
+    font-size: 45px;
+  }
+  header .container h4 {
+    font-size: 30px;
+  }
+  header .container button {
+    padding: 10px 20px;
+  }
+
+  #About {
+    padding-inline: 20px;
+  }
+  #About .container .image img {
+    width: 70%;
+  }
+
+  #Services .container .row {
+    width: 75%;
+  }
+
+  #Clients .container .content .box {
+    width: 74%;
+  }
+  #Clients .container .content .box .item p {
+    width: 80%;
+  }
+
+  #Gallery .container .images {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 300px);
+    width: auto;
+    margin-inline: auto;
+  }
+  #Gallery .container .images .image:nth-of-type(1) {
+    grid-row: 1 / span 2;
+  }
+  #Gallery .container .images .image:nth-of-type(4) {
+    grid-row: 2 / span 2;
+  }
+
+  #Contact .container .row {
+    row-gap: initial;
+  }
+  #Contact .container .row .info {
+    width: 33.33%;
+    margin-inline: initial;
+  }
+
+  #Contact .container form .input {
+    width: 33.33%;
+    margin-inline: initial;
+  }
+}
+/*850*/
+@media (min-width: 769px) and (max-width: 1300px) {
+  header nav .logo h1 {
+    font-size: 45px;
+  }
+  header .container h2 {
+    font-size: 45px;
+  }
+  header .container h4 {
+    font-size: 35px;
+  }
+
+  #About .container > * {
+    width: 50%;
+  }
+  #About .container .content h2 {
+    font-size: 35px;
+  }
+  #About .container .image img {
+    width: 85%;
+  }
+
+  .title h2 {
+    font-size: 40px;
+  }
+  #Services .container .row {
+    width: auto;
+    margin-inline: 0;
+  }
+  #Services .container .row .info {
+    order: 0;
+    width: 66.66%;
+  }
+  #Services .container .row .icon {
+    width: 33.33%;
+    order: 0;
+    margin-bottom: 0;
+  }
+
+  #Clients .container .content .box {
+    width: 50%;
+  }
+
+  #Contact .container form .input .item input::placeholder,
+  #Contact .container form .input .item textarea::placeholder {
+    font-size: 16px;
+  }
+
+
+  footer .container .posts .item .images {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+/*1050*/
+@media (min-width: 992px) and (max-width: 1300px) {
+  #About {
+    padding-inline: 0px;
+  }
+
+  #Services .container .row .info h3 {
+    font-size: 24px;
+  }
+
+  #Trainers .container .cards .card {
+    width: 25%;
+    margin-inline: 0px;
+  }
+
+  #Contact .container form {
+    width: 90%;
+  }
+
+
+  footer .container {
+      row-gap: initial;
+  }
+  footer .container .Nav-links,
+  footer .container .posts,
+  footer .container .Times{
+    width: 33.33%;
+  }
+  footer .container .posts .item .images {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 60px);
+  }
+}
+/*1250*/
+@media (min-width: 1181px) and (max-width: 1300px) {
+}

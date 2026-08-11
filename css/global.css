@@ -27,7 +27,8 @@ h6 {
   line-height: 1.2;
 }
 .container{
-  width: 85%;
+  max-width: 85%;
+  width: 100%;
   margin: 0 auto;
 }
 section {

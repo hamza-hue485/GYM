@@ -8,7 +8,7 @@
     font-size: 25px;
   }
   header nav .links .burger {
-    display: block; /*ع يحسب المارجن لبلوك الجواه صح ويقبل البوردر*/
+    display: block;
     border: 1px solid #fff;
     border-radius: 5px;
   }
@@ -26,7 +26,7 @@
     position: absolute;
     left: 50%;
     bottom: -10px;
-    background-color: #000;
+    background-color: var(--nav_color);
     transform: translate(-50%, 100%);
     flex-direction: column;
     border-radius: 10px;
@@ -34,14 +34,11 @@
     row-gap: 20px;
     padding-block: 0px;
     transition-duration: 0.5s;
-    width: 85%; /*هنا مش في ال checked */
+    width: 85%;
   }
   header nav .links input:checked ~ ul {
     height: 349px;
     padding-block: 20px;
-  }
-  header .container {
-    width: 90%;
   }
   header .container h2 {
     font-size: 30px;
@@ -53,9 +50,7 @@
     padding: 10px 10px;
   }
 
-  .container {
-    width: 90%;
-  }
+ 
   #About .container > * {
     width: 100%;
   }
@@ -153,52 +148,48 @@
     margin-inline: auto;
   }
 }
-  /*450*/
-  @media (min-width: 371px) and (max-width: 1300px) {
-    header nav .logo h1 {
-      font-size: 30px;
-    }
-    header .container h2 {
-      font-size: 40px;
-    }
-    header .container h4 {
-      font-size: 26px;
-    }
+/*450*/
+@media (min-width: 371px) and (max-width: 1300px) {
+  header nav .logo h1 {
+    font-size: 30px;
+  }
+  header .container h2 {
+    font-size: 40px;
+  }
+  header .container h4 {
+    font-size: 26px;
+  }
 
-    #Clients .container .content .box {
-      width: 100%;
-    }
-    #Clients .container .content .box .item p {
-      width: 90%;
-    }
+  #Clients .container .content .box {
+    width: 100%;
+  }
+  #Clients .container .content .box .item p {
+    width: 90%;
+  }
 
-    #Contact .container .row .info {
-      width: 100%;
-    }
-    #Contact .container form .input {
-      width: 100%;
-    }
+  #Contact .container .row .info {
+    width: 100%;
+  }
+  #Contact .container form .input {
+    width: 100%;
+  }
 
-    footer .container .Nav-links,
-    footer .container .posts,
-    footer .container .Times {
-      width: 100%;
-      margin-inline: initial;
-    }
-    footer .footer-bottom .item p {
+  footer .container .Nav-links,
+  footer .container .posts,
+  footer .container .Times {
+    width: 100%;
+    margin-inline: initial;
+  }
+  footer .footer-bottom .item p {
     font-size: 18px;
     width: initial;
     margin-inline: initial;
-    }
-  
+  }
 }
 /*650*/
 @media (min-width: 577px) and (max-width: 1300px) {
   header nav .logo h1 {
     font-size: 38px;
-  }
-  header .container {
-    width: 85%;
   }
   header .container h2 {
     font-size: 45px;
@@ -214,7 +205,7 @@
     padding-inline: 20px;
   }
   #About .container .image img {
-    width: 70%;
+      max-width: 65%;
   }
 
   #Services .container .row {
@@ -255,7 +246,7 @@
   }
 }
 /*850*/
-@media (min-width: 769px) and (max-width: 1300px) {
+@media (min-width: 769px) and (max-width: 1300px) {   
   header nav .logo h1 {
     font-size: 45px;
   }
@@ -271,9 +262,6 @@
   }
   #About .container .content h2 {
     font-size: 35px;
-  }
-  #About .container .image img {
-    width: 85%;
   }
 
   .title h2 {
@@ -302,7 +290,6 @@
     font-size: 16px;
   }
 
-
   footer .container .posts .item .images {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -310,8 +297,34 @@
 }
 /*1050*/
 @media (min-width: 992px) and (max-width: 1300px) {
+  header nav .links .burger {
+        display: none
+  }
+  header nav .links input:checked ~ ul {
+    height: initial;
+    padding-block: initial;
+  }
+    header nav .links ul {
+    height: initial;
+    background-color: transparent;
+    position: initial;
+    transform: initial;
+    flex-direction: initial;
+    align-items: initial;
+    row-gap: initial;
+    width: initial;
+    margin: initial;
+    transition: initial;
+    overflow: initial;
+  }
+
+
+
   #About {
     padding-inline: 0px;
+  }
+  #About .container .image img {
+      max-width: 80%;
   }
 
   #Services .container .row .info h3 {
@@ -327,18 +340,17 @@
     width: 90%;
   }
 
-
   footer .container {
-      row-gap: initial;
+    row-gap: initial;
   }
   footer .container .Nav-links,
   footer .container .posts,
-  footer .container .Times{
+  footer .container .Times {
     width: 33.33%;
   }
   footer .container .posts .item .images {
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(3, 60px);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 60px);
   }
 }
 /*1250*/

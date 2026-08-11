@@ -7,7 +7,7 @@ header {
   color: #fff;
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
+  flex-direction: column;
 }
 header nav {
   width: 100%;
@@ -45,6 +45,13 @@ header nav .links ul li a {
   color: #fff;
 }
 
+
+header .container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 header .container h2 {
   font-size: 45px;
 }
@@ -58,11 +65,13 @@ header .container button {
   background-color: #000;
   font-weight: bolder;
   padding: 10px 20px;
+  width: fit-content;
 }
 header .container button:hover{
   background-color: transparent;
   cursor: pointer;
 }
+
 
 #About .container {
   display: flex;
@@ -84,15 +93,14 @@ header .container button:hover{
   text-align: center;
 }
 #About .container .image img {
-  width: 85%;
+  max-width: 80%;
   vertical-align: middle;
 }
 
 #Services {
   background-color: var(--main_color);
 }
-#Services .container {
-}
+
 #Services .container .title h2 {
   color: #fff;
 }
@@ -215,6 +223,7 @@ header .container button:hover{
 #Trainers .container .cards .card .item h4 {
   font-size: 21px;
   margin-block: 16px;
+  color:var(--main_color);
 }
 #Trainers .container .cards .card .item h6 {
   font-size: 15px;
@@ -231,9 +240,6 @@ header .container button:hover{
 }
 #Trainers .container .cards .card .item ul li {
   background-color: var(--main_color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 35px;
   height: 35px;
   border: 1px solid #000;
@@ -245,6 +251,12 @@ header .container button:hover{
   background-color: #fff;
 }
 #Trainers .container .cards .card .item ul li a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
   color: #fff;
   transition-duration: 0.3s;
 }
